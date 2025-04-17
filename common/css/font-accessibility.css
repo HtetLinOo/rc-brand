@@ -1,0 +1,520 @@
+/****** ヘッダー文字色、サイズ ***********/
+.header_accessibility {
+  position: absolute;
+  top: 20px;
+  right: 20%;
+  display: flex;
+}
+.accessibility_panel {
+  display: flex;
+  color: #444444;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+}
+.accessibility_panel + .accessibility_panel {
+  margin-left: 2rem;
+}
+.accessibility_panel .btn {
+  padding: .2rem;
+  border-radius: 3px;
+  border: 1px solid #666666;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1;
+  margin-right: .2rem;
+  margin-left: .2rem;
+}
+.accessibility_panel .btn.btn_fontdark {
+  border: 1px solid #666666;
+  background-color: #000000;
+  color: #ffffff;
+}
+/* 基本追加 */
+ul.unkerlinks {
+  flex-wrap: wrap;
+}
+.wpcf7-not-valid-tip {
+  font-size: 1.4rem;
+}
+.post_box .post_lists dd a:hover h4 {
+  opacity: .8;
+}
+footer .totop {
+  display: none;
+  background-color: transparent;
+  position: fixed;
+  bottom: 20px;
+  top: unset;
+  right: 12% ;
+  width: 128px;
+  height: 149px;
+  transition: .2s;
+}
+footer .totop:hover {
+  width: 140px;
+  height: 162px;
+  opacity: .9;
+  transition: .2s;
+}
+/****** 文字サイズ Large ************/
+@media only screen and (min-width: 769px) {
+  /* >769 */
+  .fontsizeLarge {
+    font-size: 80%;
+  }
+  /* >769 header */
+  .fontsizeLarge header #nav ul.nav__link-box li a {
+    font-size: 1.25rem;
+  }
+  .fontsizeLarge header #nav ul.nav__link-box li.nav__link a,
+  .fontsizeLarge header #nav ul.nav__link-box li.menu-item a {
+  }
+  .fontsizeLarge header #nav ul.nav__link-box li.nav__link ul.nav__link__child li a,
+  .fontsizeLarge header #nav ul.nav__link-box li.nav__link ul.nav__link__child li.menu-item a,
+  .fontsizeLarge header #nav ul.nav__link-box li.nav__link ul.sub-menu li a,
+  .fontsizeLarge header #nav ul.nav__link-box li.nav__link ul.sub-menu li.menu-item a,
+  .fontsizeLarge header #nav ul.nav__link-box li.menu-item ul.nav__link__child li a,
+  .fontsizeLarge header #nav ul.nav__link-box li.menu-item ul.nav__link__child li.menu-item a,
+  .fontsizeLarge header #nav ul.nav__link-box li.menu-item ul.sub-menu li a,
+  .fontsizeLarge header #nav ul.nav__link-box li.menu-item ul.sub-menu li.menu-item a
+  {
+    font-size: 1.3rem;
+    text-indent: 2rem;
+    padding: .3rem 1rem;
+  }
+  .fontsizeLarge  header #nav ul.nav__link-box li.nav__link ul.nav__link__child,
+  .fontsizeLarge header #nav ul.nav__link-box li.nav__link ul.sub-menu,
+  .fontsizeLarge header #nav ul.nav__link-box li.menu-item ul.nav__link__child,
+  .fontsizeLarge header #nav ul.nav__link-box li.menu-item ul.sub-menu {
+    top: 90px;
+  }
+  .fontsizeLarge header.header {
+  }
+  .fontsizeLarge .section_konzatu .status_wrap {
+    height: auto;
+  }
+  .fontsizeLarge header.header .main_header .header_wrap div.right_logo .header_search form div button {
+    width: 88px;
+  }
+  /* footer */
+  .fontsizeLarge footer .footer_link .footer__link-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fontsizeLarge footer .footer_link .footer__link-box li {
+    height: auto;
+    line-height: 1.6;
+    min-width: 320px;
+  }
+  .fontsizeLarge footer .footer_link .footer__link-box li a {
+    line-height: 1.6;
+    padding: 1rem .2rem;
+  }
+  /* >769 contents */
+  .fontsizeLarge h2 {
+    font-size: 3.0rem!important;
+  }
+  .fontsizeLarge h3 {
+    font-size: 2.2rem!important;
+  }
+  .fontsizeLarge #map .section_map h4,
+  .fontsizeLarge div[class^="section_plan"] .subtitle {
+    font-size: 2.4rem!important;
+  }
+  .fontsizeLarge div[class^="section_plan"] .linkbtn a.more {
+    min-width: 317px;
+    width: auto;
+  }
+  .fontsizeLarge a.pdfbtn {
+    min-width: 430px;
+    height: auto;
+    padding: 15px 30px 15px 5px;
+    line-height: 1.2;
+  }
+  .fontsizeLarge a.linkbtn {
+    height: auto;
+    padding: 15px 30px 15px 5px;
+    line-height: 1.2;
+  }
+  .fontsizeLarge h3.faq_right_btn:after {
+    width: auto;
+  }
+  /* >769 top */
+  .fontsizeLarge .contacts {
+    line-height: 1.4;
+    justify-content: center;
+    align-items: center;
+  }
+  .fontsizeLarge .contacts span {
+    font-size: 1.3rem!important;
+  }
+  .fontsizeLarge .contacts .tel {
+    width: 50%;
+  }
+  .fontsizeLarge .contacts .tel span:nth-of-type(1),
+  .fontsizeLarge .contacts .address span:nth-of-type(1) {
+    width: 11.5rem;
+    padding: 3px 14px;
+    height: auto;
+  }
+  .fontsizeLarge .contacts .tel span:nth-of-type(3):after {
+    content: '\A';
+    white-space: pre;
+  }
+  .fontsizeLarge .section_info ul li .tag {
+    height: auto;
+  }
+  .fontsizeLarge .section_kinkyuu .tabbox {
+    font-size: 1.8rem!important;
+  }
+  .fontsizeLarge .section_konzatu .status_wrap .status h3 {
+    font-size: 1.4rem;
+    text-indent: 1rem;
+  }
+  .fontsizeLarge div[class*="section_plan"] .wrap_white .status_icon_wrap .status_icons {
+    font-size: 1.6rem;
+  }
+  .fontsizeLarge .section_konzatu .status_wrap .status_icons {
+    font-size: 1.4rem;
+  }
+  .fontsizeLarge div[class^="section_plan"] .wrap_white h2 {
+    display: inline-block;
+  }
+  .fontsizeLarge div[class^="section_plan"] .wrap_white h2:before {
+    left: -1.5em;
+  }
+  .fontsizeLarge .section_twolinks .wrap .top_two_btn {
+    width: 450px;
+  }
+  .fontsizeLarge .home #map {
+    height: 1300px;
+  }
+  .fontsizeLarge #map .section_map .mapinfo .mapstatus .status_icons {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 768.9px) {
+  /* <768 */
+}
+
+/***** 文字色 ************/
+/* general */
+.fontcolorDark {
+  background-color: #222222;
+  color: white;
+}
+.fontcolorDark #container {
+  background-color: black;
+  color: white;
+}
+.fontcolorDark h2 {
+  color: black;
+}
+.fontcolorDark h3,
+.fontcolorDark .h3,
+.fontcolorDark h4,
+.fontcolorDark .h4,
+.fontcolorDark p {
+  color: white;
+}
+.fontcolorDark a {
+  color: yellow;
+}
+.fontcolorDark a:hover {
+  color: orange;
+}
+.fontcolorDark header.header {
+  background: black;
+  color: white;
+}
+.fontcolorDark .header .main_header.pc * {
+  background-color: transparent;
+  color: white;
+}
+.fontcolorDark .accessibility_panel .btn:not(.btn_fontdark) {
+  background-color: white;
+  color: black;
+}
+.fontcolorDark header.header .main_header .header_wrap div.right_logo .header_search form div button {
+  color: black;
+  }
+.fontcolorDark header #nav ul li a {
+  background-color: black!important;
+  color: yellow!important;
+}
+.fontcolorDark header #nav ul li a:hover {
+  background-color: #444444!important;
+}
+.fontcolorDark header #nav ul.nav__link-box li.current_page_item a,
+.fontcolorDark header #nav ul.nav__link-box li.current-menu-parent a {
+  background-color: #444444!important;
+}
+.fontcolorDark .searchform input#s {
+  color: black;
+}
+.fontcolorDark footer #nav a,
+.fontcolorDark footer #nav {
+  background: transparent;
+}
+.fontcolorDark footer .footer_name,
+.fontcolorDark footer .footer_contact{
+  background: black;
+}
+.fontcolorDark footer .footer_link,
+.fontcolorDark footer #na {
+  background: #222222;
+}
+
+.fontcolorDark #content,
+.fontcolorDark .hentry,
+.fontcolorDark .hentry .entry-content,
+.fontcolorDark div[class*="_wave"]{
+  background: black;
+  color: white;
+}
+.fontcolorDark .head_obi.height2nd,
+.fontcolorDark .head_obi.height3rd {
+  background: black;
+  color: white;
+}
+.fontcolorDark .head_obi.height2nd span,
+.fontcolorDark .head_obi.height2nd h2,
+.fontcolorDark .head_obi.height3rd span,
+.fontcolorDark .head_obi.height3rd h2,
+.fontcolorDark .wrap_single_3rd .top_flash_box2 ul li {
+  color: white;
+}
+.fontcolorDark .head_obi a.home,
+.fontcolorDark .head_obi a.back,
+.fontcolorDark .head_obi a.poolback {
+  color: yellow;
+}
+.fontcolorDark .wrap_single_3rd .top_flash_box2,
+.fontcolorDark .wrap_single_3rd h3 span,
+.fontcolorDark .wrap_single_3rd .top_flash_box {
+  color: #ff4444;
+}
+.fontcolorDark .single_content .wrap_single,
+.fontcolorDark .single_content .wrap_single_3rd {
+  background: black;
+  color: white;
+}
+.fontcolorDark .single_content .glaybox,
+.fontcolorDark .single_content .glaybox2,
+.fontcolorDark .single_content .graybox2 {
+  background: #444444;
+}
+.fontcolorDark table[class^="type0"] td:nth-of-type(1),
+.fontcolorDark table[class^="type_fee"] td,
+.fontcolorDark table[class^="type_time"] td,
+.fontcolorDark table[class^="type_traning"] td:nth-of-type(1) {
+  background: #fffcdd22;
+}
+.fontcolorDark .entry-content tr:nth-child(even),
+.fontcolorDark table.type_fee01 td,
+.fontcolorDark table.type01 td,
+.fontcolorDark table.type02 td,
+.fontcolorDark table.type01.custom td,
+.fontcolorDark table.type_fee01 td:nth-of-type(2),
+.fontcolorDark table.type_fee01 td:nth-of-type(6),
+.fontcolorDark table.type_fee02 td:nth-of-type(2),
+.fontcolorDark table.type_fee03 td:nth-of-type(2),
+.fontcolorDark table.type_fee03 td:nth-of-type(4),
+.fontcolorDark table.type_fee04 td:nth-of-type(2),
+.fontcolorDark table.type_fee04 td:nth-of-type(4),
+.fontcolorDark table.type_fee05 td:nth-of-type(3),
+.fontcolorDark table.type_fee06 td:nth-of-type(1),
+.fontcolorDark table[class^="type_time"] td:nth-of-type(1),
+.fontcolorDark table[class^="type_traning"] td {
+  background: transparent;
+}
+.fontcolorDark table.type01.custom td:nth-of-type(1),
+.fontcolorDark table.type02 td:nth-of-type(1)  {
+  background: #fffcdd11;
+}
+.fontcolorDark table.type01 td,
+.fontcolorDark table.type02 td,
+.fontcolorDark table.type01.custom td,
+.fontcolorDark table.type01.custom td.group,
+.fontcolorDark table.type01.custom td.baby,
+.fontcolorDark table.type01.custom td.adult,
+.fontcolorDark table.type01.custom td.other,
+.fontcolorDark table.type01.custom td.aquabics,
+.fontcolorDark table.type01.custom td.finish,
+.fontcolorDark table.type01.custom td.none,
+.fontcolorDark table.type01.custom td.eaeobics,
+.fontcolorDark table.type01.custom td.pilates ,
+.fontcolorDark table.type01.custom td.group,
+.fontcolorDark table.type01.custom td.eaeobics,
+.fontcolorDark table.type01.custom td.training,
+.fontcolorDark table.type01.custom td.taikyokuken,
+.fontcolorDark table.type01.custom td.special {
+  color: white;
+}
+.fontcolorDark .entry-content table th {
+  background: #4CACFF44!important;
+}
+.fontcolorDark a.pdfbtn,
+.fontcolorDark a.linkbtn,
+.fontcolorDark .outlink a,
+.fontcolorDark .pdfbtn a {
+  background-color: #222222;
+  border: 1px solid #666666;
+  color: yellow;
+}
+.fontcolorDark .inq_tel {
+  background-color: #222222;
+  border: 1px solid #666666;
+  color: white;
+}
+.fontcolorDark .single_content .inq_tel span,
+.fontcolorDark .flex_two .bluetext,
+  .fontcolorDark .faqs_box dl dd {
+  color: white;
+}
+.fontcolorDark .sisetu_photo_link .content_card a,
+.fontcolorDark .dlbox {
+  background-color: #222222;
+  border: 1px solid #666666;
+  color: white;
+}
+.fontcolorDark .wrap_single_3rd .glaybox h5 {
+  background: transparent;
+}
+/* top */
+.fontcolorDark .section_konzatu .status_wrap,
+.fontcolorDark .section_konzatu .status_wrap .status {
+  background: #222222;
+  color: white;
+}
+.section_konzatu .status_wrap .status0_car {
+  background: #ddd;
+}
+.fontcolorDark .section_konzatu .status_wrap div[class*="status0"] {
+  background: #666666;
+}
+.fontcolorDark .section_konzatu .status_wrap .status_icons {
+  background: #444444;
+}
+.fontcolorDark div[class*="section_plan"] .wrap_white .status_icon_wrap .status_icons {
+  background: #444444;
+  color: white;
+}
+.fontcolorDark div[class*="section_plan"] .wrap_white .status_icon_wrap .date {
+  background: transparent;
+  color: white;
+}
+.fontcolorDark .section_konzatu .konzatu_status,
+.fontcolorDark .section_konzatu .konzatu_status span {
+  color: white;
+}
+.fontcolorDark div[class^="section_plan"] .linkbtn a.more {
+  background-color: #222222;
+  border: 1px solid #666666;
+  color: yellow;
+}
+.fontcolorDark .section_kinkyuu .tabbox {
+  color: #ff4444;
+}
+.fontcolorDark .section_kinkyuu,
+.fontcolorDark div[class*="section_"] ul li {
+  background: transparent;
+  color: white;
+}
+.fontcolorDark div[class*="section_"] ul li .read,
+.fontcolorDark h3.faq_right_btn:after {
+  color: yellow;
+}
+.fontcolorDark .section_info ul li .tag {
+  color: black;
+}
+.fontcolorDark div[class*="section_plan"] ,
+.fontcolorDark div[class*="section_plan"] .wrap,
+.fontcolorDark div[class*="section_plan"] .wrap_white,
+.fontcolorDark div[class*="section_plan"] .wrap_white .wrap_head,
+.fontcolorDark div[class*="section_plan"] h2,
+.fontcolorDark div[class*="section_plan"] h3,
+.fontcolorDark div[class*="section_plan"] h4,
+.fontcolorDark div[class*="section_plan"] p,
+.fontcolorDark div[class*="section_plan"] .read,
+.fontcolorDark div[class*="section_plan"] .subtitle {
+  background: none;
+  color: white;
+}
+.fontcolorDark .section_twolinks .wrap .top_two_btn {
+  color: yellow;
+}
+.fontcolorDark #map .section_map .mapinfo .mapstatus .status_icons,
+.fontcolorDark #map .section_map .mapinfo .mapstatus .date,
+.fontcolorDark #map .section_map h4 img {
+  background: none;
+  color: white;
+}
+.fontcolorDark #map .section_map .mapinfo .mapstatus {
+  background: #444444;
+  color: white;
+}
+.fontcolorDark .section_info,
+.fontcolorDark .section_event,
+.fontcolorDark footer {
+  background: black;
+}
+.fontcolorDark #top_twobanner,
+.fontcolorDark .section_twitter {
+  background: #222222;
+}
+.fontcolorDark #map .section_map .mapinfo .map_rute ul li {
+  color: white;
+}
+/* access */
+.fontcolorDark #map .section_map .map_rute ul li {
+  color: white;
+}
+/* facilityintroduction */
+.fontcolorDark .sisetumap .h2map {
+  color: black;
+}
+.fontcolorDark .sisetumap .h2map:before {
+  bottom: -80px;
+}
+/* info */
+.fontcolorDark .post_box .post_lists,
+.fontcolorDark .post_box .post_lists dd,
+.fontcolorDark .post_box .post_lists a {
+  background: transparent;
+  color: white!important;
+}
+
+@media only screen and (min-width: 769px) {
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.nav__link__child li a,
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.nav__link__child li.menu-item a,
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.sub-menu li a,
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.sub-menu li.menu-item a,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.nav__link__child li a,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.nav__link__child li.menu-item a,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.sub-menu li a,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.sub-menu li.menu-item a {
+    background-color: #222222!important;
+    color: yellow;
+  }
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item a:hover,
+
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.nav__link__child li a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.nav__link__child li.menu-item a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.sub-menu li a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.nav__link ul.sub-menu li.menu-item a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.nav__link__child li a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.nav__link__child li.menu-item a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.sub-menu li a:hover,
+  .fontcolorDark header #nav ul.nav__link-box li.menu-item ul.sub-menu li.menu-item a:hover
+  {
+    background-color: #444444!important;
+    color: yellow;
+  }
+}
+@media only screen and (max-width: 768.9px) {
+}
+/********* その他 **********/

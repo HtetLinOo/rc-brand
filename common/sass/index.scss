@@ -1,0 +1,5 @@
+@import "compass";
+
+@import url("./index-pc.css") only screen and (min-width:769px);
+
+@import url("./index-sp.css") only screen and (max-width:768px);

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* =============================================================================
+  @mixin  
+   ========================================================================== */
+//透過
+@mixin opacity($opacity:0.7) {
+     opacity: $opacity;
+     $opacityIE: $opacity * 100;
+     filter: alpha(opacity=$opacityIE);
+}
+
+//CSS3アニメーション
+@mixin transition($num:0.3s) {
+ -webkit-transition: all $num;
+    -moz-transition: all $num;
+     -ms-transition: all $num;
+      -o-transition: all $num;
+         transition: all $num;
+}
+
+//はみ出たテキストを隠す
+@mixin text-over(){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//テキストを隠す
+@mixin text-hidden(){
+  white-space:nowrap;
+  text-indent:100%;
+  overflow:hidden;
+}
+
+@mixin mincho(){
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+@mixin gothic(){
+    font-family:'Hiragino Kaku Gothic Pro', Verdana, Arial, sans-serif;
+}
+/*common*/
+$menu_bg:#f3eeee;
+$menu_bg2:#f4f8ff;
+$menu_left:#ffc50f;
+
+$menu_cap1:#009FD1;
+$menu_cap2:#ecfdff;
+$menu_cap3:#009FD1;
+
+$menu_hv_bg:#C1E4E9;
+$menu_hv_bg2:#009FD1;
+
+$text_black:#3B4043;
+$text_blue:#0f3261;
+$border_blue:#77c4ec;
+$border_blue2:#ffc50f;
+
+$hvcolor_wblue:#f4f8ff;
+
+$bgcolor_glay:#f3eeee;
+$bgcolor_glay2:#f4f8ff;
+$bgcolor_wblue:#f4f8ff;
+$bgcolor_wblue2:#d3e3ff;
+$bgcolor_blue:#0f3261;
+
+$box_blue:#0f3261;
+$box_blue2:#b8e7ff;
+$box_blue3:#50a8d9;
+
+$hero_blue1:#5db2e0;
+$hero_blue2:#0f3261;
+$hero_glay:#f3eeee;
+$hero_border:#183967;
+
+$cate_blue:#0f3261;
+$cate_orange:#ec9a29;
+
+$btn_orange:#ec9a29;
+$btn_orange2:#b67211;
+
+$info_blue1:#b8e7ff;
+$info_blue2:#50a8d9;
+$info_blue3:#0f3261;
+
+$map_pink:#df6661;
+$cat1:#0f3261;
+$cat2:#ec9a29;
+
+/**/
+$headline_color:#ffc50f;
+
+$bordergold:#ad9d4d;
+$maingold:#ac9b4b;
+$textcolor:#1c1701;
+$hovergold:#eee8cc;
+$textgold:#b26630;
+$top_content_nemu_text:#a99b56;
+$top_content_nemu_border:#f0ead6;
+$table_circle:#f3dd7d;
+/**/
+$maptop_text:#3b3b3b;
+$hero_box3_bg:#505050;
+$bigmap_link:#cd181e;
+
+/**/
+$menu_bg:#122a88;
+$menu_hover:#2f459c;
+$sp_menu_hover:#2f459c;
+$footer_bg:#021a4b;
+$sp_head_bg:#f8f8f8;
+$sub_menu_bg:#313a5e;
+$obi_color:#021a4b;
+$text_service:#122a88;
+
+/*aquablue*/
+$main_blue:#2d66a9;
+$main_text:#282828;
+$headertop_line:#3077df;
+$headerbottom_line:#3989f2;
+$headerbottom_line2:#cce2fb;
+$menu_hover:#CFE3F5;
+$menu_active:#74B1E6;
+$menu_second_bg:#EFF9FF;
+$menu_second_bg_hover:#CFE3F5;
+$menu_text:#333333;
+$waku_blue:#80acf8;
+
+$slider_blue:#6d94cb;
+$slider_blue2:#b7cbe6;
+
+$kuwasikumiru:#b7635a;
+$kuwasikumiru_line:#b2403b;
+
+$riyou:#57994b;
+$manin:#d7625d;
+$konzatu:#d98131;
+$cyuushi:#545454;
+$gray_bg:#eeeeee;
+
+$tab_mizuiro1:#57ade0;
+$tab_mizuiro2:#d6ecfd;
+
+$tab_orange1:#dea93b;
+$tab_orange2:#f9edd3;
+
+$tab_glay:#e0e0e0;
+$tab_red:#b7635a;
+
+$tab_bg:#f9fafc;
+$tab_bg_line:#dde5ea;
+$tab_bg2:#fafaf3;
+$tab_bg2_line:#e9e7e3;
+
+$twitter_blue:#1dbaff;
+
+$access_blue_bg:#d8edfd;
+
+$modoru_blue:#2a6acd;
+
+$search_box:#b6d5ef;
+$search_btn:#d2e9fd;
+$search_btn_line:#ffffff;
+$search_btn_bg:#ffffff;
+
+/* footer */
+$footer_linkbg:#6eafd6;
+$footer_link_box:#ecf5f5;
+$footer_menubg:#317BC0;
+$footer_text_color_org:#787980;
+$footer_text_color:#ffffff;
+
+$sp_menu_bg:#004BB1;
+$sp_menu_bg_active:#3688D5;
+$sp_menu_line:#3688D5;
+$sp_menu_text:#ffffff;
+$sp_menu_bg_hover:#374663;
+
+
+$towlink_line:#77aafe;
+
+$h4_bg:#D3EEFF;
+$h4_text:#005097;
+$status_text:#0060B4;
+
+$rinji_red:#b7635a;
+
+$konzatu_blue:#0060B4;
+$status1:#009C3E;
+$status2:#2DAED1;
+$status3:#E6AA07;
+$status4:#E67D07;
+$status5:#E85759;
+
+$tab_menu1:#2FAEE5;
+$tab_menu2:#D0ECFF;
+$tab_waku_glay:#CCCCCC;
+
+$tag1:#D0ECFF;
+$tag2:#C35D56;
+$tag3:#D0ECFF;
+$tag4:#D0ECFF;
+
+$tab_menu3:#E6A707;
+$tab_menu4:#FAEED0;
+
+$sisetu_waku:#2FAEE5;
+$sisetu_waku_bg:#D0ECFF;
+$sisetuorange_text:#FF9933;
+$sisetu_status1:#3A9C3E;
+$sisetu_status2:#3A9C3E;
+$sisetu_status3:#d98131;
+$sisetu_status4:#E85759;
+$sisetu_status5:#545454;
+
+$sisetu_link_btn:#4475cf;
+
+$cat_pool:#E5A907;
+$cat_event:#179B3E;
+$cat_traning:#179B3E;
+$cat_important:#179B3E;
+$cat_emergency:#E57D07;
+$cat_school:#2DADD0;
+$cat_etc:#1E5FBE;
+

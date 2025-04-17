@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEQ,iEAAwD,CAExD,iEAAwD",
+"sources": ["../sass/common.scss"],
+"names": [],
+"file": "common.css"
+}

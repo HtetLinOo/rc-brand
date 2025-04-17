@@ -1,0 +1,17 @@
+{
+  "name": "royalcanin2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass common/sass/brand.scss common/css/brand.css",
+    "watch-css": "sass --watch common/sass/brand.scss:common/css/brand.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}
