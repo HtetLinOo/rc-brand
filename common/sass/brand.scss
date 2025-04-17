@@ -1,100 +1,374 @@
 .sec-brand {
+    font-family: 'Noto Sans Japanese', sans-serif;
+
     .brand-mv {
-        max-width: 1120px;
+        max-width: 1125px;
         margin: 0 auto;
         padding: 0 20px;
         background: white;
+
         .row {
-            max-width: 915px;
-            margin: 0 auto;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             .lft-txt {
                 width: 40%;
-                max-width: 365px;
-                p{
-                    font-family: "noto-sans-cjk-jp", sans-serif;
+                // max-width: 365px;
+
+                p {
+                    font-family: 'Noto Sans Japanese', sans-serif;
                     font-weight: 500;
                     font-style: normal;
                     font-size: 3.6rem;
                     line-height: 1.7;
-                    letter-spacing: 10.8px;
+                    letter-spacing: 10px;
                     font-weight: 500;
                     color: #E2001A;
                     margin-bottom: 5px;
-                    
+
                 }
             }
-            .right-blk{
+
+            .right-blk {
                 width: 60%;
-                max-width: 550px;
+                // max-width: 550px;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                .img{
+
+                .img {
                     width: 100%;
                     height: auto;
                     display: block;
                     margin: 0;
+
                     img {
                         max-width: 157px;
                         margin: 0 auto;
                     }
                 }
+                .illu-dogcat{
+                    max-width: 381px;
+                    margin: 0 auto;
+                    padding-top: 150px;
+                    img {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
 
-    .kv-doctor{
-        max-width: 1120px;
+    .kv-doctor {
+        max-width: 1125px;
         margin: 0 auto;
         padding: 0 20px;
-        margin-top: -10px;
-        .kv{
-            img{
+
+        .kv {
+            iframe {
                 width: 100%;
+                height: 607px;
+                max-width: 1078px;
+                margin: 0 auto;
             }
         }
     }
 
     .life-blk {
-        padding: 90px 20px 0 20px;
+        padding: 90px 20px 220px 20px;
+
         .inner {
-            max-width: 900px;
+            max-width: 1085px;
             margin: 0 auto;
+
             .row {
                 display: flex;
-                gap: 95px;
+                justify-content: space-between;
+                gap: 85px;
+
                 .lft-txt {
-                    max-width: 514px;
-                    p{
-                        font-family: "noto-sans-cjk-jp", sans-serif;
+                    max-width: 635px;
+
+                    p {
+                        font-family: 'Noto Sans Japanese', sans-serif;
+
                         font-weight: 500;
                         font-style: normal;
                         font-size: 1.8rem;
                         line-height: 2.1;
-                        letter-spacing: 3.2px;
-                        font-weight: 500;
+                        letter-spacing: 2.7px;
                         color: #E2001A;
                         margin-bottom: 35px;
                     }
                 }
-                .story-blk{
-                    .img{
-                        margin: 0 auto 40px; 
+
+                .story-blk {
+
+                    .img {
+                        margin: 0 auto 40px;
                         max-width: 280px;
-                        img{
+
+                        img {
                             width: 100%;
                         }
                     }
                 }
             }
+
             .story4 {
                 max-width: 692px;
-                margin: 0 auto;
+                margin: 10px auto 0;
+
                 img {
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    .product-blk {
+        position: relative;
+
+        &::before {
+            content: "";
+            background: url(../../../images/brand/illu_cat.png) no-repeat;
+            background: url(http://localhost/projects/rc/wp-content/themes/RoyalCanin2024/images/brand/illu_cat.png) no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 466px;
+            height: 251px;
+            z-index: 10;
+        }
+
+        .wrapper {
+            max-width: 1125px;
+            margin: 0 auto;
+            padding: 0 20px;
+
+            .product-logo {
+                img {
+                    width: 100%;
+                    max-width: 270px;
+                }
+            }
+
+            .product-ttl {
+                font-family: 'Noto Sans Japanese', sans-serif;
+                font-size: 3.6rem;
+                font-weight: 400;
+                color: #E2001A;
+                line-height: 2;
+
+                span {
+                    display: block;
+                    font-size: 2.7rem;
+                    color: #333333;
+                    line-height: 0.7;
+                    letter-spacing: 0.8px;
+                }
+            }
+
+            .product-txt {
+                font-size: 1.6rem;
+                color: #333333;
+                line-height: 2.1;
+                letter-spacing: 0.48px;
+                padding: 35px 0 70px;
+            }
+
+            .item-blk {
+                .f-row {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    gap: 25px;
+                    &.sec{
+                        grid-template-columns: 1fr;
+                        p{
+                            &.gray {
+                                border-radius: 0 25px 25px 0;
+                            }
+                        }
+                    }
+                    
+                    .top-right {
+                        .card-row {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            &.sec{
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+                        }
+                        
+                    }
+
+                    .card-img {
+                        max-width: 262px;
+                        margin: 0 auto;
+                        padding: 30px 0 10px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .card-txt {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        line-height: 1.5;
+                        letter-spacing: 0.8px;
+                        text-align: center;
+
+                        &.care {
+                            color: #4C3394;
+
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    background: url(../../../images/brand/icon_care.png) no-repeat;
+                                    background: url(http://localhost/projects/rc/wp-content/themes/RoyalCanin2024/images/brand/icon_care.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -27px;
+                                    width: 21px;
+                                    height: 17px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+
+                        &.urinary {
+                            color: #CF9C3B;
+
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    background: url(../../../images/brand/icon_nyouro.png) no-repeat;
+                                    background: url(http://localhost/projects/rc/wp-content/themes/RoyalCanin2024/images/brand/icon_nyouro.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -27px;
+                                    width: 24px;
+                                    height: 22px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+
+                        &.skin {
+                            color: #0B99BF;
+
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    background: url(../../../images/brand/icon_hifu.png) no-repeat;
+                                    background: url(http://localhost/projects/rc/wp-content/themes/RoyalCanin2024/images/brand/icon_hifu.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -27px;
+                                    width: 20px;
+                                    height: 18px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+
+                        &.dig {
+                            color: #875844;
+
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    background: url(../../../images/brand/icon_shokaki.png) no-repeat;
+                                    background: url(http://localhost/projects/rc/wp-content/themes/RoyalCanin2024/images/brand/icon_shokaki.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -27px;
+                                    width: 18px;
+                                    height: 22px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+
+                        &.manage {
+                            color: #1B9377;
+
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    background: url(../../../images/brand/icon_himan.png) no-repeat;
+                                    background: url(http://localhost/projects/rc/wp-content/themes/RoyalCanin2024/images/brand/icon_himan.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -27px;
+                                    width: 24px;
+                                    height: 14px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+
+                        &.kidney {
+                            color: #A83F78;
+
+                            span {
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    background: url(../../../images/brand/icon_shinzo.png) no-repeat;
+                                    background: url(http://localhost/projects/rc/wp-content/themes/RoyalCanin2024/images/brand/icon_shinzo.png) no-repeat;
+                                    background-size: 100% 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: -27px;
+                                    width: 20px;
+                                    height: 18px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        font-family: 'Noto Sans Japanese', sans-serif;
+                        font-size: 2rem;
+                        font-weight: 700;
+                        line-height: 1.45;
+                        letter-spacing: 4px;
+                        border-radius: 25px;
+                        padding: 10px;
+                        text-align: center;
+
+                        &.pink {
+                            background: #F7E7E9;
+                        }
+
+                        &.gray {
+                            background: #EDEDED;
+                            border-radius: 25px 0 0 25px;
+                        }
+                    }
+                }
+
+
             }
         }
     }
@@ -107,96 +381,182 @@
             .row {
                 flex-direction: column;
                 align-items: flex-start;
+
                 .lft-txt {
                     width: 100%;
-                    margin-bottom: 35px;
-                    p{
+                    p {
                         font-size: 2.5rem;
+                        letter-spacing: 7.5px;
                     }
                 }
-                .right-blk{
+
+                .right-blk {
                     width: 100%;
                     gap: 0 75px;
-                    .img{
+
+                    .img {
                         width: auto;
                         max-width: 100px;
-                        img{
+
+                        img {
                             width: 100%;
                             margin: 0 auto;
                         }
                     }
-                    .illu-doctor {
-                        max-width: 127px;
-                        img{
+
+                    .illu-dogcat {
+                        max-width: 172px;
+                        padding-top: 140px;
+                        img {
                             width: 100%;
                         }
                     }
                 }
             }
         }
+
         .kv-doctor {
             padding: 0;
+            .kv{
+                iframe{
+                    height: 211px;
+                }
+            }
         }
 
         .life-blk {
             padding-top: 30px;
-            .inner{
+
+            .inner {
                 .row {
                     flex-direction: column;
                     gap: 0px;
-                    .lft-txt{
-                        p{
+
+                    .lft-txt {
+                        p {
                             font-size: 1.3rem;
                             line-height: 2;
                             letter-spacing: 1.95px;
                             margin-bottom: 30px;
                         }
                     }
+
                     .story-blk {
                         width: 285px;
                         margin: 0 auto;
+
                         .gallery {
-                           
+
                             display: grid;
-                        grid-template-areas:
-                          "story1..."
-                          "...story3"
-                          "story2...";
+                            grid-template-areas:
+                                "story1..."
+                                "...story3"
+                                "story2...";
                         }
-                        
-                      
+
+
                         .img {
-                          max-width: 142px;
-                          &.story1 {
-                            grid-area: story1;
-                            position: relative;
-                            z-index: -1;
-                            left: 22%;
-                            margin-bottom: 0;
-                          }
-                      
-                          &.story2 {
-                            grid-area: story2;
-                            margin-bottom: 0;
-                            position: relative;
-                            z-index: 10;
-                            margin-top: -30px;
-                            left: 40%;
-                          }
-                      
-                          &.story3 {
-                            grid-area: story3;
-                            margin-bottom: 0;
-                            margin-top: -35px;
-                            position: relative;
-                            z-index: 5;
-                          }
+                            max-width: 142px;
+
+                            &.story1 {
+                                grid-area: story1;
+                                position: relative;
+                                z-index: -1;
+                                left: 22%;
+                                margin-bottom: 0;
+                            }
+
+                            &.story2 {
+                                grid-area: story2;
+                                margin-bottom: 0;
+                                position: relative;
+                                z-index: 10;
+                                margin-top: -30px;
+                                left: 40%;
+                            }
+
+                            &.story3 {
+                                grid-area: story3;
+                                margin-bottom: 0;
+                                margin-top: -35px;
+                                position: relative;
+                                z-index: 5;
+                            }
                         }
-                      }
-                      
+                    }
+
                 }
+
                 .story4 {
                     max-width: 323px;
+                }
+            }
+        }
+
+        .product-blk {
+            &::before {
+                width: 277px;
+                top: -190px;
+                right: -35px;
+            }
+            .wrapper{
+                .product-ttl {
+                    font-size: 2.6rem;
+                    span {
+                        font-size: 1.8rem;
+                    }
+                }
+                .product-txt {
+                    font-size: 1.4rem;
+                }
+                .item-blk{
+                    .f-row{
+                        grid-template-columns: 1fr;
+                        .card{
+                            max-width: 215px;
+                            // margin: 0 auto;
+                        }
+                        .top-lft{
+                            display: flex;
+                            gap: 50px;
+                            p{
+                                &.pink{
+                                    width: 38px;
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                        .top-right {
+                            display: flex;
+                            gap: 50px;
+                            p{
+                                &.gray{
+                                    width: 38px;
+                                    font-size: 1.6rem;
+                                    border-radius: 25px 25px 0 0;
+                                }
+                            }
+                            .card-row{
+                                grid-template-columns: 1fr;
+                                &.sec{
+                                    grid-template-columns: 1fr;
+                                }
+                            }
+                        }
+                        &.sec{
+                            .top-right{
+                                p{
+                                    &.gray{
+                                        text-indent: -99999px;
+                                        border-radius: 0 0 25px 25px;
+                                    }
+                                }
+                            }
+                        }
+                        .card-txt {
+                            font-size: 1.4rem;
+                        }
+                    }
                 }
             }
         }
